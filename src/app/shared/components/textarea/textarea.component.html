@@ -1,0 +1,7 @@
+<div class="textarea-container" [formGroup]="formGroup" *ngIf="formGroup">
+    <textarea class="textarea-container__textarea"
+        [attr.type]="field.contentType" [readOnly]="field.readOnly" [id]="field.id" [name]="field.name"
+        [formControlName]="field.name" [placeholder]="field.placeholder"
+        [value]="field.value">
+   </textarea>
+</div>
