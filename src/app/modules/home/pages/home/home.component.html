@@ -1,1 +1,12 @@
-<p>home works!</p>
+<div class="home-page">
+    <div class="home-page__form-container">
+        <form [formGroup]="nutritionFormGroup">
+            <div class="form-container__control">
+                <app-textarea [formGroup]="nutritionFormGroup" [field]="nutritionControl"></app-textarea>
+            </div>
+            <div class="form-container__btns">
+                <button class="btn btn--primary" [disabled]="nutritionFormGroup.invalid" (click)="analyse()">Analyse</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,15 +1,27 @@
-@import 'abstracts/_variables';
+@import "abstracts/_variables";
 
 .textarea-container {
     &__textarea {
-        height: 50px;
+        height: 150px;
+        color: $grey-color;
+        font-size: 16px;
         padding: 10px 15px;
         border-radius: 5px;
         box-shadow: 0 0 10px 0 rgba(114, 159, 197, 0.1);
         border: solid 1px #dcdde5;
         background-color: $white-color;
         font-family: SSTArabic-Roman;
-        font-size: 14px;
-        // color: $grey-color;
+        outline: none;
+
+        &:focus {
+            box-shadow: unset;
+
+            border: 1px solid $primary-blue;
+        }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
     }
 }

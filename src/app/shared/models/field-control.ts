@@ -7,6 +7,4 @@ export interface FieldControl {
     placeholder?: string,
     formControlName?: string,
     value?: any;
-    readOnly?: boolean,
-    isRequired?: boolean,
 }

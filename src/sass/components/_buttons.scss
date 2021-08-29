@@ -1,0 +1,30 @@
+@import "abstracts/variables";
+
+.btn {
+    outline: none !important;
+    font-size: 20px;
+    font-weight: 400;
+    border: 0;
+    text-align: center;
+    color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: unset;
+    cursor: pointer;
+    transition: 0.3s all;
+    padding: 8px 13px;
+    border-radius: 5px;
+
+    &--primary {
+        background-color: $primary-blue;
+        &:hover,
+        &:active {
+            background-color: $dark-blue;
+        }
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
