@@ -1,0 +1,11 @@
+@import "abstracts/_variables";
+
+.home-page{
+    &__ingredients-list{
+        .empty-state{
+            color:$danger-color;
+            font-size: 13px;
+            font-weight: 500;
+        }
+    }
+}

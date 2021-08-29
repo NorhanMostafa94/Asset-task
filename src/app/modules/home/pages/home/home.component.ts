@@ -22,6 +22,9 @@ export class HomeComponent implements OnInit {
   }
 
   analysedList = [];
+  totalNutrients;
+  totalDaily;
+  calories;
 
   constructor(private homeService: HomeService
     , private formBuilder: FormBuilder) { }
@@ -43,7 +46,10 @@ export class HomeComponent implements OnInit {
     let ingredients = this.nutritionFormGroup.get('nutrition').value.split('\n');
     this.homeService.getNutrition(ingredients).subscribe((res: any) => {
       this.analysedList = res.ingredients;
-    })
+      this.totalNutrients = res.totalNutrients;
+      this.totalDaily = res.totalDaily;
+      this.calories = res.calories;
+    });
   }
 
 }

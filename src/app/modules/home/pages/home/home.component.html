@@ -1,12 +1,35 @@
 <div class="home-page">
-    <div class="home-page__form-container">
-        <form [formGroup]="nutritionFormGroup">
-            <div class="form-container__control">
-                <app-textarea [formGroup]="nutritionFormGroup" [field]="nutritionControl"></app-textarea>
+    <div class="row">
+        <div class="col-sm-12 col-md-8">
+            <div class="home-page__form-container">
+                <form [formGroup]="nutritionFormGroup">
+                    <div class="form-container__control">
+                        <app-textarea [formGroup]="nutritionFormGroup" [field]="nutritionControl">
+                        </app-textarea>
+                    </div>
+                    <div class="form-container__btns mt-3">
+                        <button class="btn btn--primary" [disabled]="nutritionFormGroup.invalid"
+                            (click)="analyse()">Analyse</button>
+                    </div>
+                </form>
             </div>
-            <div class="form-container__btns">
-                <button class="btn btn--primary" [disabled]="nutritionFormGroup.invalid" (click)="analyse()">Analyse</button>
+            <div class="home-page__ingredients-list d-flex flex-column justify-content-center mt-4"
+                *ngIf="analysedList.length">
+                <div class="empty-state text-center" *ngIf="!analysedList[0].parsed">
+                    We cannot calculate the nutrition for some ingredients. Please check the ingredient spelling or
+                    if
+                    you
+                    have entered a quantities for the ingredients.
+                </div>
+                <div class="ingredients-list mt-4">
+                    <app-ingredients-list [list]="analysedList"></app-ingredients-list>
+                </div>
             </div>
-        </form>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-md-0 mt-sm-5" *ngIf="totalDaily && totalNutrients">
+            <div class="home-page__nutrition-facts">
+                <app-nutrition-facts [calories]="calories" [totalDaily]="totalDaily" [totalNutrients]="totalNutrients"></app-nutrition-facts>
+            </div>
+        </div>
     </div>
 </div>

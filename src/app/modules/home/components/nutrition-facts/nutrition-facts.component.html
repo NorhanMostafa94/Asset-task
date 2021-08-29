@@ -1,0 +1,110 @@
+<div class="nutrition-facts-container">
+    <div class="nutrition-facts-container__header">
+        Nutrition Facts
+    </div>
+    <div class="nutrition-facts-container__sub-header">
+        Amount Per Serving
+    </div>
+    <div class="nutrition-facts-container__calories-container d-flex align-items-center justify-content-between">
+        <span class="title">Calories</span>
+        <span class="value">{{calories}}</span>
+    </div>
+    <div class="nutrition-facts-container__nutritions-container">
+        <div class="nutrition d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="text--bold">Total Fat</span>
+                <span class="mx-1">{{totalNutrients.FAT.quantity.toFixed(1)}} {{totalNutrients.FAT.unit}}</span>
+            </div>
+            <span class="value">{{totalDaily.FAT.quantity.toFixed(1)}} {{totalDaily.FAT.unit}}</span>
+        </div>
+        <div class="nutrition mx-3 d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="">Saturated Fat </span>
+                <span class="mx-1">{{totalNutrients.FASAT.quantity.toFixed(1)}} {{totalNutrients.FASAT.unit}}</span>
+            </div>
+            <span class="value">{{totalDaily.FASAT.quantity.toFixed(1)}} {{totalDaily.FASAT.unit}}</span>
+        </div>
+        <div class="nutrition mx-3 d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="">Trans Fat</span>
+                <span class="mx-1">-</span>
+            </div>
+            <span class="value"></span>
+        </div>
+        <div class="nutrition d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="text--bold">Cholesterol</span>
+                <span class="mx-1">{{totalNutrients.CHOLE.quantity.toFixed(1)}} {{totalNutrients.CHOLE.unit}}</span>
+            </div>
+            <span class="value">{{totalDaily.CHOLE.quantity.toFixed(1)}} {{totalDaily.CHOLE.unit}}</span>
+        </div>
+        <div class="nutrition d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="text--bold">Sodium</span>
+                <span class="mx-1">{{totalNutrients.NA.quantity.toFixed(1)}} {{totalNutrients.NA.unit}}</span>
+            </div>
+            <span class="value">{{totalDaily.NA.quantity.toFixed(1)}} {{totalDaily.NA.unit}}</span>
+        </div>
+        <div class="nutrition d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="text--bold">Total Carbohydrate</span>
+                <span class="mx-1">{{totalNutrients.CHOCDF.quantity.toFixed(1)}} {{totalNutrients.CHOCDF.unit}}</span>
+            </div>
+            <span class="value">{{totalDaily.CHOCDF.quantity.toFixed(1)}} {{totalDaily.CHOCDF.unit}}</span>
+        </div>
+        <div class="nutrition mx-3 d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="">Dietary Fiber</span>
+                <span class="mx-1">{{totalNutrients.FIBTG.quantity.toFixed(1)}} {{totalNutrients.FIBTG.unit}}</span>
+            </div>
+            <span class="value">{{totalDaily.FIBTG.quantity.toFixed(1)}} {{totalDaily.FIBTG.unit}}</span>
+        </div>
+        <div class="nutrition mx-3 d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="">Total Sugars</span>
+                <span class="mx-1">{{totalNutrients.SUGAR.quantity.toFixed(1)}} {{totalNutrients.SUGAR.unit}}</span>
+            </div>
+            <span class="value">{{totalDaily.SUGAR.quantity.toFixed(1)}} {{totalDaily.SUGAR.unit}}</span>
+        </div>
+        <div class="nutrition mx-3 d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="">Includes - Added Sugars</span>
+            </div>
+        </div>
+        <div class="nutrition d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="text--bold">Protein</span>
+                <span class="mx-1">{{totalNutrients.PROCNT.quantity.toFixed(1)}} {{totalNutrients.PROCNT.unit}}</span>
+            </div>
+            <span class="value">{{totalDaily.PROCNT.quantity.toFixed(1)}} {{totalDaily.PROCNT.unit}}</span>
+        </div>
+        <div class="nutrition mx-3 d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="">Vitamin D</span>
+                <span class="mx-1">{{totalNutrients.VITD.quantity.toFixed(1)}} {{totalNutrients.VITD.unit}}</span>
+            </div>
+            <span class="value">{{totalDaily.VITD.quantity.toFixed(1)}} {{totalDaily.VITD.unit}}</span>
+        </div>
+        <div class="nutrition mx-3 d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="">Calcium</span>
+                <span class="mx-1">{{totalNutrients.CA.quantity.toFixed(1)}} {{totalNutrients.CA.unit}}</span>
+            </div>
+            <span class="value">{{totalDaily.CA.quantity.toFixed(1)}} {{totalDaily.CA.unit}}</span>
+        </div>
+        <div class="nutrition mx-3 d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="">Iron</span>
+                <span class="mx-1">{{totalNutrients.FE.quantity.toFixed(1)}} {{totalNutrients.FE.unit}}</span>
+            </div>
+            <span class="value">{{totalDaily.FE.quantity.toFixed(1)}} {{totalDaily.FE.unit}}</span>
+        </div>
+        <div class="nutrition mx-3 d-flex align-items-center justify-content-between">
+            <div class="text">
+                <span class="">Potassium</span>
+                <span class="mx-1">{{totalNutrients.K.quantity.toFixed(1)}} {{totalNutrients.K.unit}}</span>
+            </div>
+            <span class="value">{{totalDaily.K.quantity.toFixed(1)}} {{totalDaily.K.unit}}</span>
+        </div>
+    </div>
+</div>

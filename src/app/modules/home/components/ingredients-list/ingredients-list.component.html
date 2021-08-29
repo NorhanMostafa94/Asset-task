@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Qty</th>
+            <th scope="col">Unit</th>
+            <th scope="col">Food</th>
+            <th scope="col">Calories</th>
+            <th scope="col">Weight</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        
+        <ng-container *ngFor="let item of list">
+        <tr *ngIf="item.parsed">
+            <th scope="row">{{item.parsed[0].quantity}}</th>
+            <td>{{item.parsed[0].measure}}</td>
+            <td>{{item.parsed[0].food}}</td>
+            <td>{{item.parsed[0].retainedWeight}} kcal</td>
+            <td>{{item.parsed[0].weight}} g</td>
+        </tr>
+        </ng-container>
+    </tbody>
+
+</table>

@@ -1,0 +1,44 @@
+@import "abstracts/_variables";
+
+.nutrition-facts-container {
+    border: 2px solid $light-blue;
+    padding: 10px;
+
+    &__header {
+        font-size: 38px;
+        border-bottom: 10px solid $light-blue;
+    }
+
+    &__sub-header {
+        font-size: 20px;
+    }
+
+    &__calories-container {
+        border-bottom: 6px solid $light-blue;
+        .title {
+            font-size: 30px;
+        }
+        .value {
+            font-size: 16px;
+        }
+    }
+
+    &__nutritions-container {
+        .nutrition {
+            padding: 2px 0;
+            &:not(:last-child) {
+                border-bottom: 1px solid $light-blue;
+            }
+            .text {
+                font-size: 16px;
+                &--bold {
+                    font-weight: 700;
+                }
+            }
+            .value {
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+    }
+}
